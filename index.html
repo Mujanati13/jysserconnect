@@ -18,24 +18,100 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="JC Logo" class="logo-img" /></a></h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="#one" class="scrolly" data-i18n="aboutUs">About Us</a></li>
-							<li><a href="#four" class="scrolly" data-i18n="ourProjects">Our Projects</a></li>
-							<li><a href="#five" class="scrolly" data-i18n="contactUs">Contact Us</a></li>
-							<li class="header-controls">
-								<button id="theme-toggle" class="header-control-btn" title="Toggle Theme">
-									<i class="fas fa-sun"></i>
-								</button>
-								<div id="lang-switcher" class="header-lang-switcher">
-									<button class="lang-btn" data-lang="en">EN</button>
-									<button class="lang-btn" data-lang="ar">AR</button>
-									<button class="lang-btn" data-lang="fr">FR</button>
+					<div class="header-inner">
+						<!-- Logo (Left) -->
+						<a href="index.html" class="header-logo">
+							<div class="logo-icon">
+								<span>J</span>
+							</div>
+							<span class="logo-text">Jysser<span>Connect</span></span>
+						</a>
+						
+						<!-- Actions (Center-Left) -->
+						<div class="header-actions">
+							<div class="lang-switcher">
+								<button class="lang-btn" data-lang="en">EN</button>
+								<button class="lang-btn" data-lang="ar">AR</button>
+								<button class="lang-btn" data-lang="fr">FR</button>
+							</div>
+							<button id="theme-toggle" class="theme-btn" title="Toggle Theme">
+								<i class="fas fa-sun"></i>
+							</button>
+							<!-- Hamburger Menu -->
+							<button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Menu">
+								<span class="hamburger-line"></span>
+								<span class="hamburger-line"></span>
+								<span class="hamburger-line"></span>
+							</button>
+						</div>
+						
+						<!-- Navigation Links (Right) -->
+						<nav class="header-nav">
+							<div class="nav-dropdown">
+								<a href="#" class="nav-link">
+									<span class="nav-text" data-i18n="aboutUs">À propos</span>
+									<span class="nav-indicator"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a href="about-presentation.html" data-i18n="presentation">Présentation</a>
+									<a href="about-team.html" data-i18n="teamJC">L'équipe JC</a>
 								</div>
-							</li>
-						</ul>
-					</nav>
+							</div>
+							<div class="nav-dropdown">
+								<a href="#" class="nav-link">
+									<span class="nav-text" data-i18n="services">Services</span>
+									<span class="nav-indicator"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a href="service-web-mobile.html" data-i18n="webMobileDev">Développement Web et Mobile</a>
+									<a href="service-software.html" data-i18n="softwareDev">Solutions Logiciels</a>
+									<a href="service-security.html" data-i18n="itSecurity">Sécurité Informatique</a>
+									<a href="service-support.html" data-i18n="supportMaintenance">Support et Maintenance</a>
+									<a href="service-training.html" data-i18n="training">Formation</a>
+								</div>
+							</div>
+							<a href="#four" class="nav-link scrolly">
+								<span class="nav-text" data-i18n="ourPortfolio">Portfolio</span>
+								<span class="nav-indicator"></span>
+							</a>
+							<a href="#five" class="nav-link scrolly">
+								<span class="nav-text" data-i18n="contactUs">Contact</span>
+								<span class="nav-indicator"></span>
+							</a>
+						</nav>
+					</div>
+					
+					<!-- Mobile Menu Overlay -->
+					<div class="mobile-menu" id="mobile-menu">
+						<nav class="mobile-nav">
+							<div class="mobile-dropdown">
+								<span class="mobile-dropdown-title" data-i18n="aboutUs">À propos</span>
+								<div class="mobile-dropdown-content">
+									<a href="about-presentation.html" class="mobile-nav-link" data-i18n="presentation">Présentation</a>
+									<a href="about-team.html" class="mobile-nav-link" data-i18n="teamJC">L'équipe JC</a>
+								</div>
+							</div>
+							<div class="mobile-dropdown">
+								<span class="mobile-dropdown-title" data-i18n="services">Services</span>
+								<div class="mobile-dropdown-content">
+									<a href="service-web-mobile.html" class="mobile-nav-link" data-i18n="webMobileDev">Développement Web et Mobile</a>
+									<a href="service-software.html" class="mobile-nav-link" data-i18n="softwareDev">Solutions Logiciels</a>
+									<a href="service-security.html" class="mobile-nav-link" data-i18n="itSecurity">Sécurité Informatique</a>
+									<a href="service-support.html" class="mobile-nav-link" data-i18n="supportMaintenance">Support et Maintenance</a>
+									<a href="service-training.html" class="mobile-nav-link" data-i18n="training">Formation</a>
+								</div>
+							</div>
+							<a href="#four" class="mobile-nav-link scrolly" data-i18n="ourPortfolio">Portfolio</a>
+							<a href="#five" class="mobile-nav-link scrolly" data-i18n="contactUs">Contact</a>
+						</nav>
+						<div class="mobile-menu-footer">
+							<div class="mobile-lang-switcher">
+								<button class="mobile-lang-btn" data-lang="en">EN</button>
+								<button class="mobile-lang-btn" data-lang="ar">AR</button>
+								<button class="mobile-lang-btn" data-lang="fr">FR</button>
+							</div>
+						</div>
+					</div>
 				</header>
 
 			<!-- Banner -->
@@ -47,7 +123,7 @@
 							<p data-i18n="bannerText">And there are no hoverboards or flying cars.<br />
 							Just apps. Lots of mother flipping apps.</p>
 							<div class="banner-buttons">
-								<a href="#four" class="btn btn-primary scrolly" data-i18n="exploreProjects">Explore Projects</a>
+								<a href="#four" class="btn btn-primary scrolly" data-i18n="explorePortfolio">Explore Portfolio</a>
 								<a href="#five" class="btn btn-secondary scrolly" data-i18n="contactUs">Contact Us</a>
 							</div>
 						</div>
@@ -55,9 +131,8 @@
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
-					<div class="content">
+				<section style="padding: 70px;" id="one" class=" style1 bottom">
+					<div class="">
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
@@ -115,53 +190,53 @@
 					</div>
 				</section>
 
-			<!-- Four - Projects -->
+			<!-- Four - Portfolio -->
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2 data-i18n="sectionFourTitle">Our Projects</h2>
-							<p data-i18n="sectionFourSubtitle">Discover our portfolio of successful projects and innovations</p>
+							<h2 data-i18n="sectionFourTitle">Our Portfolio</h2>
+							<p data-i18n="sectionFourSubtitle">Discover our collection of successful projects and innovations</p>
 						</header>
-						<div class="projects-grid">
+						<div class="portfolio-grid">
 							<div class="row gtr-uniform">
-								<article class="col-6 col-12-medium project-card">
-									<div class="project-image">
-										<img src="https://placehold.co/600x400/2563eb/ffffff?text=MMAS" alt="MMAS Project" />
+								<article class="col-6 col-12-medium portfolio-card">
+									<div class="portfolio-image">
+										<h2 class="portfolio-name">MMAS</h2>
 									</div>
-									<div class="project-content">
-										<h3 data-i18n="projectMmasTitle">MMAS</h3>
-										<p data-i18n="projectMmasDesc">A comprehensive management and automation system designed to streamline business operations and enhance productivity.</p>
-										<a href="#" class="button small" data-i18n="viewProject">View Project</a>
-									</div>
-								</article>
-								<article class="col-6 col-12-medium project-card">
-									<div class="project-image">
-										<img src="https://placehold.co/600x400/7c3aed/ffffff?text=FITHOUSE" alt="FITHOUSE Project" />
-									</div>
-									<div class="project-content">
-										<h3 data-i18n="projectFithouseTitle">FITHOUSE</h3>
-										<p data-i18n="projectFithouseDesc">A modern fitness center management platform with member tracking, class scheduling, and performance analytics.</p>
-										<a href="#" class="button small" data-i18n="viewProject">View Project</a>
+									<div class="portfolio-content">
+										<h3 data-i18n="portfolioMmasTitle">MMAS</h3>
+										<p data-i18n="portfolioMmasDesc">A comprehensive management and automation system designed to streamline business operations and enhance productivity.</p>
+										<a href="#" class="button small" data-i18n="viewDetails">View Details</a>
 									</div>
 								</article>
-								<article class="col-6 col-12-medium project-card">
-									<div class="project-image">
-										<img src="https://placehold.co/600x400/059669/ffffff?text=MCI" alt="MCI Project" />
+								<article class="col-6 col-12-medium portfolio-card">
+									<div class="portfolio-image">
+										<h2 class="portfolio-name">FITHOUSE</h2>
 									</div>
-									<div class="project-content">
-										<h3 data-i18n="projectMciTitle">MCI</h3>
-										<p data-i18n="projectMciDesc">An innovative communication and integration platform connecting businesses with cutting-edge technology solutions.</p>
-										<a href="#" class="button small" data-i18n="viewProject">View Project</a>
+									<div class="portfolio-content">
+										<h3 data-i18n="portfolioFithouseTitle">FITHOUSE</h3>
+										<p data-i18n="portfolioFithouseDesc">A modern fitness center management platform with member tracking, class scheduling, and performance analytics.</p>
+										<a href="#" class="button small" data-i18n="viewDetails">View Details</a>
 									</div>
 								</article>
-								<article class="col-6 col-12-medium project-card">
-									<div class="project-image">
-										<img src="https://placehold.co/600x400/dc2626/ffffff?text=SPORTX" alt="SPORTX Project" />
+								<article class="col-6 col-12-medium portfolio-card">
+									<div class="portfolio-image">
+										<h2 class="portfolio-name">MCI</h2>
 									</div>
-									<div class="project-content">
-										<h3 data-i18n="projectSportxTitle">SPORTX</h3>
-										<p data-i18n="projectSportxDesc">A sports management and analytics platform for teams, athletes, and sports organizations worldwide.</p>
-										<a href="#" class="button small" data-i18n="viewProject">View Project</a>
+									<div class="portfolio-content">
+										<h3 data-i18n="portfolioMciTitle">MCI</h3>
+										<p data-i18n="portfolioMciDesc">An innovative communication and integration platform connecting businesses with cutting-edge technology solutions.</p>
+										<a href="#" class="button small" data-i18n="viewDetails">View Details</a>
+									</div>
+								</article>
+								<article class="col-6 col-12-medium portfolio-card">
+									<div class="portfolio-image">
+										<h2 class="portfolio-name">SPORTX</h2>
+									</div>
+									<div class="portfolio-content">
+										<h3 data-i18n="portfolioSportxTitle">SPORTX</h3>
+										<p data-i18n="portfolioSportxDesc">A sports management and analytics platform for teams, athletes, and sports organizations worldwide.</p>
+										<a href="#" class="button small" data-i18n="viewDetails">View Details</a>
 									</div>
 								</article>
 							</div>
@@ -173,25 +248,11 @@
 				<section id="five" class="wrapper style2 special fade contact-section">
 					<div class="container">
 						<header class="contact-header">
-							<span class="contact-icon"><i class="fas fa-envelope"></i></span>
 							<h2 data-i18n="sectionFiveTitle">Get In Touch</h2>
-							<p data-i18n="sectionFiveSubtitle">Subscribe to our newsletter and stay updated with our latest news</p>
+							<p data-i18n="sectionFiveSubtitle">Ready to start your project? Contact us today</p>
 						</header>
-						<form method="post" action="#" class="cta contact-form">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall">
-									<div class="input-wrapper">
-										<i class="fas fa-envelope input-icon"></i>
-										<input type="email" name="email" id="email" placeholder="Your Email Address" data-i18n="emailPlaceholder" />
-									</div>
-								</div>
-								<div class="col-4 col-12-xsmall">
-									<input type="submit" value="Get Started" class="fit primary submit-btn" data-i18n-value="getStarted" />
-								</div>
-							</div>
-						</form>
-						<div class="contact-extras">
-							<p class="contact-note" data-i18n="contactNote">We respect your privacy. Unsubscribe at any time.</p>
+						<div class="contact-email">
+							<a href="mailto:example@jysserconnect.com">example@jysserconnect.com</a>
 						</div>
 					</div>
 				</section>
@@ -201,7 +262,7 @@
 					<div class="footer-content">
 						<div class="footer-brand">
 							<a href="index.html" class="footer-logo">
-								<img src="images/logo.png" alt="Jysser Connect" class="logo-img" />
+								<span class="logo-text">Jysser<span>Connect</span></span>
 							</a>
 							<p class="footer-tagline" data-i18n="footerTagline">Connecting ideas, building solutions.</p>
 						</div>
@@ -210,7 +271,7 @@
 							<h4 data-i18n="quickLinks">Quick Links</h4>
 							<ul>
 								<li><a href="#one" data-i18n="aboutUs">About Us</a></li>
-								<li><a href="#four" data-i18n="ourProjects">Our Projects</a></li>
+								<li><a href="#four" data-i18n="ourPortfolio">Our Portfolio</a></li>
 								<li><a href="#five" data-i18n="contactUs">Contact Us</a></li>
 							</ul>
 						</div>
