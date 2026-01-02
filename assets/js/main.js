@@ -46,7 +46,7 @@
 			$(
 				'<div id="titleBar">' +
 					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title"><a href="index.html" class="logo-text">Jysser<span>Connect</span></a></span>' +
 				'</div>'
 			)
 				.appendTo($body);
@@ -55,7 +55,15 @@
 			$(
 				'<div id="navPanel">' +
 					'<nav>' +
-						$('#nav').navList() +
+						'<a class="link depth-0" href="about-presentation.html">Présentation</a>' +
+						'<a class="link depth-0" href="about-team.html">L\'équipe JC</a>' +
+						'<a class="link depth-0" href="service-web-mobile.html">Développement Web et Mobile</a>' +
+						'<a class="link depth-0" href="service-software.html">Solutions Logiciels</a>' +
+						'<a class="link depth-0" href="service-security.html">Sécurité Informatique</a>' +
+						'<a class="link depth-0" href="service-support.html">Support et Maintenance</a>' +
+						'<a class="link depth-0" href="service-training.html">Formation</a>' +
+						'<a class="link depth-0" href="index.html#four">Portfolio</a>' +
+						'<a class="link depth-0" href="index.html#five">Contact</a>' +
 					'</nav>' +
 				'</div>'
 			)
